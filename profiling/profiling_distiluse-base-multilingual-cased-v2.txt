@@ -1,0 +1,19 @@
+Timer unit: 1e-09 s
+
+Total time: 172.126 s
+File: /tmp/ipykernel_6071/2331601058.py
+Function: run_model at line 1
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     1                                           @profile
+     2                                           def run_model(model_name):
+     3         1 1273186367.0 1273186367.0      0.7      model = SentenceTransformer(model_name)
+     4         1 166198201919.0 166198201919.0     96.6      X = model.encode(T, convert_to_tensor=True)
+     5         1 4654692481.0 4654692481.0      2.7      result = find_spearman_pearson(X, labels)
+     6                                               
+     7         1     269934.0 269934.0      0.0      with open(f'profiling/profiling_{model_name}.txt', 'w') as stream:
+     8                                                   profile.print_stats(stream=stream)
+     9                                               
+    10                                               return result 
+
