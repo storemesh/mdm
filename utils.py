@@ -30,6 +30,13 @@ def prepare_dataset():
     df_hscode4 = df_hscode4[df_hscode4['hscode4_text'].notnull()]
     df_hscode4 = df_hscode4.reset_index().drop(columns='index')
     return df_hscode4
+
+def prepare_dataset_en():
+    df = pd.read_csv('dataset/semantic_similarity/hscode4_en_translate.csv', dtype={'HSCode2': 'string'})
+    df = df.drop(columns="hscode4_text")
+    df = df.rename(columns={'TranslatedText': 'hscode4_text'})
+    df['HSCode2'] = df['HSCode2'].str.zfill(2)
+    return df
     
 
 def find_accuracy(series):    
