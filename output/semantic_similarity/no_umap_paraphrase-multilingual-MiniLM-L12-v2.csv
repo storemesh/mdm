@@ -1,0 +1,2 @@
+spearman_cosine	pearson_cosine	spearman_dot	pearson_dot	load_model_time	encode_time	spearman_pearson_time	model_name
+0.1753432462244915	0.257245632825537	0.1646286559447913	0.23856710758810684	2.1492221355438232	34.853023052215576	6.7646164894104	paraphrase-multilingual-MiniLM-L12-v2

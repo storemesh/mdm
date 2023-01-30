@@ -1,0 +1,2 @@
+spearman_cosine	pearson_cosine	spearman_dot	pearson_dot	load_model_time	encode_time	spearman_pearson_time	model_name
+0.18293111986707342	0.2640745827270426	0.1788234151047577	0.2562385047593538	2.5109007358551025	131.73296642303467	6.487622261047363	paraphrase-multilingual-mpnet-base-v2

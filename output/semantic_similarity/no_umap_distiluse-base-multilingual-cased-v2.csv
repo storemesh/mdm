@@ -1,0 +1,2 @@
+spearman_cosine	pearson_cosine	spearman_dot	pearson_dot	load_model_time	encode_time	spearman_pearson_time	model_name
+0.14813543998884737	0.2383370164302456	0.14719805177134232	0.23819834775181092	13.464010238647461	62.01048684120178	4.264452695846558	distiluse-base-multilingual-cased-v2
